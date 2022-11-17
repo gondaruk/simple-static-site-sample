@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Simple Static Site</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section id="content">
+      <img src="img/avatar.jpg" alt="Carl Barks" class="avatar" />
+
+      <h1>Hey this is about page!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <p id="post-load">&nbsp;</p>
+
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+        </li>
+        <li>
+          <a href="index.html" title="Home"><i class="fas fa-house"></i></a>
+        </li>
+        <li>
+          <a href="contacts.html" title="Contacts"><i class="fas fa-address-book"></i></a>
+        </li>
+        <li>
+          <a href="about.html" title="About"><i class="fas fa-address-card"></i></a>
+        </li>
+        <li>
+        </li>
+      </ul>
+    </section>
+    <script>
+      setTimeout(function() {
+          document.getElementById('post-load').innerText = 'This text will appear after ≈2 seconds'
+          document.getElementById('post-load').classList += 'loaded';
+      }, 2000);
+    </script>
+  </body>
+ 
+</html>
